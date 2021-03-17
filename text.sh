@@ -8,3 +8,5 @@ ps -ef | grep pushlive | sort -k 10
 # 批量替换所有文件中的某一字符
 find . -name "*.go" | xargs  sed -i "" 's/code/github/g'
 
+# 文件中多行合并成一行
+cat a.txt | tr '\n' ','
