@@ -21,3 +21,7 @@ sort a.txt b.txt | uniq
 # 差集 a.txt-b.txt:
 sort a.txt b.txt b.txt | uniq -u
 
+
+# 文件分割
+
+split -l 1000 tmp.txt   # 生成 a.aa a.ab ... 每个文件1000行   
